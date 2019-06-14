@@ -1,5 +1,7 @@
 # ÐApp Boilerplate
 
+Basic boilerplate for decentralized applications.
+
 ## Prerequisites
 
 To get started, install the following on your machine:
