@@ -1,5 +1,6 @@
 import React from "react";
 import { ToastContainer } from 'react-toastify'
+import { drizzleConnect } from 'drizzle-react'
 import 'react-toastify/dist/ReactToastify.css'
 import {
   ContractData,
@@ -8,7 +9,7 @@ import {
 
 import logo from "./logo.png";
 
-export default () => (
+const Homepage = () => (
   <div className="App">
     <ToastContainer />
     <div>
@@ -28,3 +29,12 @@ export default () => (
     </div>
   </div>
 );
+
+const mapStateToProps = state => ({
+  accounts: state.accounts,
+  SimpleStorage: state.contracts.SimpleStorage,
+  TutorialToken: state.contracts.TutorialToken,
+  drizzleStatus: state.drizzleStatus
+})
+
+export default drizzleConnect(Homepage, mapStateToProps);
