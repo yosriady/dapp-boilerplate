@@ -5,7 +5,7 @@ import { LoadingContainer } from "drizzle-react-components";
 import "./App.css";
 
 import drizzleOptions from "./drizzleOptions";
-import MyContainer from "./MyContainer";
+import MyComponent from "./MyComponent";
 import store from './middleware'
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <DrizzleProvider store={store} options={drizzleOptions}>
         <LoadingContainer>
-          <MyContainer />
+          <MyComponent />
         </LoadingContainer>
       </DrizzleProvider>
     );
