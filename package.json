@@ -8,6 +8,7 @@
   },
   "scripts": {
     "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
+    "ethlint": "solium -d contracts/",
     "prettier:solidity": "./node_modules/.bin/prettier --write contracts/**/*.sol"
   },
   "husky": {
