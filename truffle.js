@@ -4,6 +4,9 @@ const path = require("path");
 // const RINKEBY_ENDPOINT = `https://rinkeby.infura.io/v3/${process.env.INFURA_ACCESS_TOKEN}`;
 
 module.exports = {
+
+  plugins: ["truffle-security"],
+
   // See <http://truffleframework.com/docs/advanced/configuration> to customize your Truffle configuration!
   contracts_build_directory: path.join(__dirname, "app/src/contracts"),
   networks: {

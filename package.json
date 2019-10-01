@@ -7,15 +7,16 @@
     "test": "test"
   },
   "scripts": {
+    "verify": "truffle run verify",
     "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
     "ethlint": "solium -d contracts/",
     "prettier:solidity": "./node_modules/.bin/prettier --write contracts/**/*.sol"
   },
   "husky": {
     "hooks": {
-       "pre-commit": "npm run prettier:solidity"
+      "pre-commit": "npm run prettier:solidity"
     }
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/truffle-box/drizzle-box.git"
@@ -29,7 +30,9 @@
   "homepage": "https://github.com/truffle-box/drizzle-box#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^2.3.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "truffle-error": "0.0.5",
+    "truffle-security": "^1.5.5"
   },
   "devDependencies": {
     "dotenv": "^8.0.0",
