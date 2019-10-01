@@ -30,7 +30,7 @@
   "homepage": "https://github.com/truffle-box/drizzle-box#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^2.3.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "truffle-error": "0.0.5",
     "truffle-security": "^1.5.5"
   },
